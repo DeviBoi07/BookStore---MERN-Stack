@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://bookstore-mern-stack-6lkz.onrender.com")
+      .get("https://bookstore-mern-stack-6lkz.onrender.com/books")
       .then((res) => {
         setBooks(res.data.data);
 
